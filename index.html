@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__container">
+				<a href="/"> Master klass </a>
+				<p class="header__text">13-14-15-may 20:00 uzb</p>
+			</div>
+		</header>
+
+		<main>
+			<section class="lider">
+				<div class="container lider__container">
+					<h2 class="lider__title">
+						Baqirib Intizom O‘rnatish —
+Faqat Ilmsiz Onaning Quroli.
+3 Kun Ichida Bu Ilmni O’rganing
+					</h2>
+					<p class="lider__text">
+						Bolangizni <b>urmasdan</b>, asabiylashmasdan
+tarbiyalash mumkin, hattoki siz va
+<b>bolangiz asabiy</b> bo’lsangiz ham
+					</p>
+				</div>
+			</section>
+			<section class="royhat royhat__container">
+				<div class="container">
+					<p class="royhat__text">
+						<span class="royhat__span">Hurriyat Rahmatullayevadan 3 kunlik bepul master-klass </span>
+						Oilaviy munosabatlar va bolalar psixologi
+					</p>
+
+					<div class="bepul">
+						<div class="bepul-content">
+							<p class="bepul-content__text">847.000 so’m</p>
+							<span class="bepul-content__span">Bepul</span>
+						</div>
+						<button class="btn" onclick="openModal()">Ro'yxatdan o'tish</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="gul">
+				<div class="container gul__container">
+					<p class="gul__text">Shoshiling! Joylar soni oz qoldi</p>
+					<p class="gul__text">Shoshiling! Joylar soni oz qoldi</p>
+				</div>
+			</section>
+
+      <section>
+        <div class="container">
+          <h2 class="title">00:15:00</h2>
+        </div>
+      </section>
+
+      <section class="kun">
+        <div class="container">
+          <h2 class="kun__title">3 kunlik master-klassda</h2>
+          <ul class="kun__list">
+            <li class="kun__item">O’zingizdagi bolalik travmalaringiz ustida
+ishlaysiz va bosiq <b>ona bo’lishga</b> erishasiz
+</li>
+            <li class="kun__item">
+Bolangizni <b> urmasdan tarbiya</b> qilishni o’rganasiz,
+hattoki siz va bolangiz asabiy bo’lsangiz ham
+</li>
+            <li class="kun__item">
+<b>Uyatchang</b> va tortinchoq farzanddan, bboshqaruvchi
+lider farzand tarbiyalash tehnikalarini o’rganasiz
+</li>
+          </ul>
+        </div>
+      </section>
+      			<section class="gul">
+				<div class="container gul__container">
+					<p class="gul__text">13-14-15-may / bepul master-klass</p>
+					<p class="gul__text">13-14-15-may / bepul master-klass</p>
+				</div>
+			</section>
+
+      <div id="myModal" class="modal">
+				<form class="modal-content" id="registration-form">
+					<span class="close" onclick="closeModal()">&times;</span>
+					<h2>Davom etish uchun ma'lumotlaringizni kiriting</h2>
+
+					<label for="ism">Ismingiz</label>
+					<input type="text" id="ism" name="ism" placeholder="Ismingiz" required />
+					<small class="error-msg" id="nameError">Required field</small>
+
+					<label for="telefon">Telefon raqamingiz</label>
+					<div class="phone-wrapper">
+						<input type="tel" id="telefon" name="telefon" placeholder="99-999-9999" required/>
+					</div>
+					<small class="error-msg" id="phoneError">Required field</small>
+
+					<div id="formAlert" class="form-alert">Please fill in all required fields</div>
+
+					<button class="submit-btn" type="submit"><a  type="submit"	 onclick="validateForm()">DAVOM ETISH</a></button>
+				</form>
+			</div>
+		</main>
+
+    <script src="main.js"></script>
+	</body>
+</html>
