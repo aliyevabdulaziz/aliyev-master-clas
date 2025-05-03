@@ -51,6 +51,7 @@ function validateForm() {
 		formAlert.style.display = 'block';
 	} else {
 		formAlert.style.display = 'none';
+		document.querySelector('a').setAttribute('href', 'davom-etish.html');
     window.open('davom-etish.html', '_blank');
 		closeModal();
 	}
